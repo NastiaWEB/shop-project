@@ -1,0 +1,261 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+body {
+  position: relative;
+  font-family: "Noto Sans", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: #e4e5e7;
+}
+
+p,
+a,
+span,
+ul,
+ol,
+tr,
+form,
+button {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+}
+select,
+input,
+textarea,
+button {
+  vertical-align: middle;
+}
+input[type="submit"] {
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+  color: #6375ab;
+}
+a {
+  text-decoration: none;
+  transition: 0.3s all ease-out;
+}
+p,
+a,
+select,
+input,
+textarea,
+button,
+span,
+h1,
+h2,
+h3 {
+  color: #3a405b;
+}
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+.uppercase {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.center {
+  justify-content: center;
+}
+.icon_wrap {
+  cursor: pointer;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+}
+.icon {
+  width: inherit;
+  height: inherit;
+}
+input {
+  font-size: 14px;
+  padding: 10px;
+  border: none;
+  font-family: Noto Sans;
+  transition: all 0.3s;
+}
+input::placeholder {
+  color: #a1a8bd;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: all 0.3s;
+}
+input:focus,
+select:focus {
+  outline: none;
+}
+input:focus::placeholder {
+  transition: 0.3s;
+  color: transparent;
+}
+select {
+  border: none;
+  padding: 20px;
+}
+/*------------------------------Header--------------------------------*/
+.header {
+  background: #fff;
+  font-weight: 700;
+}
+/*------------------------------BUTTON STYLES--------------------------------*/
+.btn {
+  padding: 8px 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  border: 2px solid #f0f2f7;
+}
+.btn:hover {
+  background: #f0f2f7;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-active {
+  color: #fff;
+  background-color: #2754eb;
+}
+.btn.in_cart{
+  padding: 8px 10px;
+  height: 20px;
+}
+.btn.buy_now{
+}
+.btn.buy_now:hover{
+  background-color: #e3fcec;
+  border-color: #e3fcec;
+}
+/*------------------------------LOGO-------------------------------*/
+
+.logo_wrap {
+  margin-right: 100px;
+  height: 25px;
+  width: 92px;
+}
+.logo {
+  height: 100%;
+  width: 100%;
+}
+/*------------------------------MENU STYLES--------------------------------*/
+.nav {
+  padding: 26px 0;
+  justify-content: space-between;
+}
+.nav ul li {
+  padding: 10px;
+}
+.rounded_wrapper {
+  background: #fff;
+  border-radius: 5px;
+  margin: 15px;
+}
+.menus {
+  flex-grow: 2;
+}
+.menu_icon_item {
+  margin-right: 30px;
+}
+.cart_icon{margin-right: 20px;}
+#cart_counter{
+  font-size: 12px;
+  padding: 4px;
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+  background-color: #f0f2f7;
+  border-radius: 50%;
+  text-align: center;
+}
+.nav_panel {
+  border: 1px solid #f0f2f7;
+  border-radius: 0 0 5px 5px;
+}
+.nav_panel > .flex {
+  justify-content: space-between;
+}
+.nav_item {
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.search_bar {
+  padding: 10px;
+  border-left: 1px solid #f0f2f7;
+  border-right: 1px solid #f0f2f7;
+}
+
+/*------------------------------SORT--------------------------------*/
+
+.filter span {
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+.sort {
+  border-right: 2px solid #f0f2f7;
+}
+/*------------------------------SIDEBAR--------------------------------*/
+.sidebar {
+  width: 270px;
+}
+.sidebar > ul > li {
+  text-transform: capitalize;
+  border-bottom: 1px solid #f0f2f7;
+  font-size: 14px;
+}
+.sidebar a {
+  display: block;
+  padding: 14px 20px;
+}
+/*------------------------------PRODUCTS--------------------------------*/
+.products {
+  align-items: flex-start;
+  font-weight: 700;
+}
+.products_list {
+  text-transform: capitalize;
+  text-align: center;
+}
+.product_item {
+  width: 270px;
+  font-size: 18px;
+}
+.product_item .desc {
+  padding: 10px;
+}
+.desc > p {
+  padding-bottom: 10px;
+}
+.desc > .title {
+  color: #1c1e23;
+}
+p.price_wrap {
+  font-size: 16px;
+}
