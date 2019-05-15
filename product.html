@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="style.css">
+  <title>React App</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+
+  <div class="header">
+    <div class="container">
+      <!-- MENU -->
+      <nav class="nav flex center">
+        <div class="logo_wrap flex center">
+          <a href="/"><img src="img/logo.svg" class="logo" alt="logo" /></a>
+        </div>
+        <ul class="menus flex">
+          <li><a href="/">Home</a></li>
+          <li><a href="/cart">My cart</a></li>
+          <li><a href="/privacy">Privacy</a></li>
+        </ul>
+        <a class="menu_icon_item uppercase flex" href="#"><span class="icon_wrap "><img class="icon" src="https://img.icons8.com/material-rounded/24/000000/user.png"></span>My profile</a>
+        <a class="cart_icon uppercase flex" href="#"><span class="icon_wrap "><img class="icon" src="https://img.icons8.com/material-rounded/24/000000/shopping-cart.png"></span>cart<span id="cart_counter">1</span></a>
+        <a class="heart_icon uppercase flex" href="#"><span class="icon_wrap "><img class="icon" src="img/heart.svg"></span>favorites</a>
+      </nav>
+    </div>
+    <!-- NAV -->
+    <div class="nav_panel">
+      <div class="container flex">
+        <ul class="flex">
+          <li class="nav_item"><a href="#">Top Sales</a></li>
+          <li class="nav_item"><a href="#">Brand Focus</a></li>
+          <li class="nav_item"><a href="#">Hi-tech</a></li>
+          <li class="nav_item"><a href="#">Best Sellers</a></li>
+          <li class="nav_item"><a href="#">Projects</a></li>
+        </ul>
+        <div class="search_bar flex">
+          <label for="search" class="icon_wrap"><img class="icon" src="https://img.icons8.com/material-rounded/30/000000/search.png"></label>
+          <input id="search" type="text" name="search" placeholder="I’m looking for ..." />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCT -->
+  <div class="container flex wrap product_main_wrapper">
+    <div class="col_1">
+      <div class="product_images_wrapper flex center rounded_wrapper">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/41yJ75gpV-L._SX381_BO1,204,203,200_.jpg" class="main_product_image" alt="product" />
+      </div>
+    </div>
+    <div class="col_1">
+      <div class="rounded_wrapper product_desc_sdb">
+        <p class="main_product_title strong">Zenden Active</p>
+        <div class="main_produc_buttons flex">
+          <div class="btn btn_blue">Add to cart</div>
+          <div class="btn ">favorite</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

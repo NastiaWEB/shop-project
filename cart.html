@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="style.css">
+  <title>React App</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+
+  <div class="header">
+    <div class="container">
+      <!-- MENU -->
+      <nav class="nav flex wrap center">
+        <div class="logo_wrap flex center">
+          <a href="/"><img src="img/logo.svg" class="logo" alt="logo" /></a>
+        </div>
+        <ul class="menus flex">
+          <li><a href="/">Home</a></li>
+          <li><a href="/cart">My cart</a></li>
+          <li><a href="/privacy">Privacy</a></li>
+        </ul>
+        <div class="flex">
+          <a class="menu_icon_item uppercase flex" href="#"><span class="icon_wrap "><img class="icon" src="https://img.icons8.com/material-rounded/24/000000/user.png"></span>My profile</a>
+          <a class="cart_icon uppercase flex" href="#"><span class="icon_wrap "><img class="icon" src="https://img.icons8.com/material-rounded/24/000000/shopping-cart.png"></span>cart<span id="cart_counter">1</span></a>
+          <a class="heart_icon uppercase flex" href="#"><span class="icon_wrap "><img class="icon" src="img/heart.svg"></span>favorites</a>
+        </div>
+      </nav>
+    </div>
+    <!-- NAV -->
+    <div class="nav_panel">
+      <div class="container flex wrap">
+        <ul class="flex">
+          <li class="nav_item"><a href="#">Top Sales</a></li>
+          <li class="nav_item"><a href="#">Brand Focus</a></li>
+          <li class="nav_item"><a href="#">Hi-tech</a></li>
+          <li class="nav_item"><a href="#">Best Sellers</a></li>
+          <li class="nav_item"><a href="#">Projects</a></li>
+        </ul>
+        <div class="search_bar flex">
+          <label for="search" class="icon_wrap"><img class="icon" src="https://img.icons8.com/material-rounded/30/000000/search.png"></label>
+          <input id="search" type="text" name="search" placeholder="I’m looking for ..." />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--  CART  TABLE -->
+  <div class="container cart_page_wrapper flex">
+
+    <div class="cart_table rounded_wrapper col_2">
+      <div class="table_header flex center">
+        <div class="col_2">
+          <h3>2 Products</h3>
+        </div>
+        <div class="tac col_1">Quantity</div>
+        <div class="tac col_1">Price</div>
+      </div>
+      <div class="table_body">
+        <div class="ct_product_wrap  flex">
+          <div class="ct_product col_2 flex">
+            <a href="product.html" class="product_images_wrapper ct_product_image"><img src="https://images-na.ssl-images-amazon.com/images/I/41yJ75gpV-L._SX381_BO1,204,203,200_.jpg" class="product_image" alt="product" /></a>
+            <div>
+              <a href="product.html" class="strong ct_product_name">Apple TV 32GB</a>
+            </div>
+          </div>
+          <div class="tac flex center col_1">
+            <div class="btn rounded_btn ct_action "><img class="icon" src="https://img.icons8.com/material-rounded/24/000000/minus-math.png"></div>
+            <span>1</span>
+            <div class="btn rounded_btn ct_action "><img class="icon" src="https://img.icons8.com/material-rounded/24/000000/plus-math.png"></div>
+          </div>
+          <div class="tac col_1">
+            <p class="price_wrap strong"><span class="currency">$</span><span class="price">44.5</span></p>
+          </div>
+          <div class="ct_actions_wrapper">
+            <span class="delete flex ct_action"><span class="icon_wrap "><img class="icon" src="https://img.icons8.com/material-rounded/24/000000/trash.png"></span>Delete</span>
+            <span class="favorites flex ct_action"><span class="icon_wrap "><img class="icon" src="img/heart.svg"></span>In favorites</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar rounded_wrapper ct_sidebar">
+      <div class="table_header">
+        <h3>Order amount</h3>
+      </div>
+      <div class="order_details">
+        <div class="flex order_desc">
+          <p>Price:</p>
+          <span>20$</span>
+        </div>
+        <div class="flex order_desc">
+          <p>Discount:</p>
+          <span>20%</span>
+        </div>
+        <div class="flex order_desc">
+          <p>Total:</p>
+          <span>20$</span>
+        </div>
+        <div class="order_desc">
+          <div class="btn btn_blue ">
+            checkout
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
